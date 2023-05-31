@@ -1,0 +1,11 @@
+name: Prod release
+on:
+  push:
+    branches:
+      - main
+jobs:
+  SomeJob:
+    runs-on: ubuntu-latest
+    environment: prod
+    steps:
+      - run: echo "🎉 The job is running!"
